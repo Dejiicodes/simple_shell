@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * cd_dot - changes to the parent directory
- *
- * @datash: data relevant (environ)
- *
+ * cd_dot - this changes to the parent directory
+ * @datash: the relevant data (environ)
  * Return: no return
  */
+
 void cd_dot(data_shell *datash)
 {
 	char pwd[PATH_MAX];
@@ -52,12 +51,12 @@ void cd_dot(data_shell *datash)
 }
 
 /**
- * cd_to - changes to a directory given
+ * cd_to - this changes to a directory given
  * by the user
- *
- * @datash: data relevant (directories)
+ * @datash: the relevant data (directories)
  * Return: no return
  */
+
 void cd_to(data_shell *datash)
 {
 	char pwd[PATH_MAX];
@@ -87,11 +86,11 @@ void cd_to(data_shell *datash)
 }
 
 /**
- * cd_previous - changes to the previous directory
- *
- * @datash: data relevant (environ)
+ * cd_previous - this changes to the previous directory
+ * @datash: the relevant data (environ)
  * Return: no return
  */
+
 void cd_previous(data_shell *datash)
 {
 	char pwd[PATH_MAX];
@@ -129,11 +128,11 @@ void cd_previous(data_shell *datash)
 }
 
 /**
- * cd_to_home - changes to home directory
- *
- * @datash: data relevant (environ)
+ * cd_to_home - this changes to home directory
+ * @datash: the relevant data (environ)
  * Return: no return
  */
+
 void cd_to_home(data_shell *datash)
 {
 	char *p_pwd, *home;
