@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * repeated_char - counts the repetitions of a char
- *
- * @input: input string
- * @i: index
+ * repeated_char - this counts the repetitions of a char
+ * @input: the input string
+ * @i: this is the index
  * Return: repetitions
  */
+
 int repeated_char(char *input, int i)
 {
 	if (*(input - 1) == *input)
@@ -16,14 +16,13 @@ int repeated_char(char *input, int i)
 }
 
 /**
- * error_sep_op - finds syntax errors
- *
- * @input: input string
- * @i: index
- * @last: last char read
- * Return: index of error. 0 when there are no
- * errors
+ * error_sep_op - this finds syntax errors
+ * @input: the input string
+ * @i: this is the index
+ * @last: the last char read
+ * Return: the index of error, 0 if no errors
  */
+
 int error_sep_op(char *input, int i, char last)
 {
 	int count;
@@ -69,12 +68,12 @@ int error_sep_op(char *input, int i, char last)
 }
 
 /**
- * first_char - finds index of the first char
- *
- * @input: input string
- * @i: index
- * Return: 1 if there is an error. 0 in other case.
+ * first_char - this finds index of the first char
+ * @input: the input string
+ * @i: this is the index
+ * Return: 1 if there is an error, 0 if no errors
  */
+
 int first_char(char *input, int *i)
 {
 
@@ -93,14 +92,14 @@ int first_char(char *input, int *i)
 }
 
 /**
- * print_syntax_error - prints when a syntax error is found
- *
- * @datash: data structure
- * @input: input string
- * @i: index of the error
- * @bool: to control msg error
+ * print_syntax_error - this prints when a syntax error is found
+ * @datash: the data struct
+ * @input: the input string
+ * @i: the index of the error
+ * @bool: this is to control msg error
  * Return: no return
  */
+
 void print_syntax_error(data_shell *datash, char *input, int i, int bool)
 {
 	char *msg, *msg2, *msg3, *error, *counter;
@@ -146,13 +145,13 @@ void print_syntax_error(data_shell *datash, char *input, int i, int bool)
 }
 
 /**
- * check_syntax_error - intermediate function to
+ * check_syntax_error - the intermediate function to
  * find and print a syntax error
- *
- * @datash: data structure
- * @input: input string
- * Return: 1 if there is an error. 0 in other case
+ * @datash: the data struct
+ * @input: the input string
+ * Return: 1 if there is an error, 0 if no errors
  */
+
 int check_syntax_error(data_shell *datash, char *input)
 {
 	int begin = 0;
