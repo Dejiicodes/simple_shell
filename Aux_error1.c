@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * strcat_cd - function that concatenates the message for cd error
+ * strcat_cd - this is the function that concatenates the message for cd error
  *
  * @datash: data relevant (directory)
  * @msg: message to print
@@ -78,7 +78,7 @@ char *error_get_cd(data_shell *datash)
 }
 
 /**
- * error_not_found - generic error message for command not found
+ * error_not_found - this is the generic error message for command not found
  * @datash: data relevant (counter, arguments)
  * Return: Error message
  */
